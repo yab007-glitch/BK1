@@ -68,27 +68,39 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "ProfessionalService",
         "name": "BK1",
         "url": "https://www.bk1.com",
-        "logo": "https://www.bk1.com/logo.png",
+        "logo": "https://www.bk1.com/assets/logo.svg",
+        "image": "https://www.bk1.com/og-image.jpg",
         "description": "Professional website building and maintenance services that drive results",
         "address": {
             "@type": "PostalAddress",
-            "addressCountry": "US"
+            "addressLocality": "Montreal",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
         },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Montreal"
+            },
+            {
+                "@type": "City",
+                "name": "Toronto"
+            },
+            {
+                "@type": "City",
+                "name": "New York"
+            }
+        ],
+        "priceRange": "$$",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+1-438-600-8005",
             "contactType": "customer service",
-            "availableLanguage": ["English"]
-        },
-        "sameAs": [
-            "https://www.facebook.com/bk1",
-            "https://www.twitter.com/bk1",
-            "https://www.linkedin.com/company/bk1",
-            "https://www.instagram.com/bk1"
-        ]
+            "availableLanguage": ["English", "French"]
+        }
     }
     </script>
     
@@ -158,7 +170,10 @@
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <h2>BK1</h2>
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/logo.svg" alt="BK1 Logo" class="logo-img">
+                        <h2>BK1</h2>
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">Home</a></li>
@@ -322,6 +337,7 @@
                             <span class="portfolio-tag">E-commerce</span>
                             <span class="portfolio-tag">Luxury</span>
                         </div>
+                        <a href="case-studies/fashion-boutique.html" class="btn-text">View Case Study <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -347,6 +363,7 @@
                             <span class="portfolio-tag">Restaurant</span>
                             <span class="portfolio-tag">Hospitality</span>
                         </div>
+                        <a href="case-studies/gourmet-restaurant.html" class="btn-text">View Case Study <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -372,6 +389,7 @@
                             <span class="portfolio-tag">Wellness</span>
                             <span class="portfolio-tag">Luxury</span>
                         </div>
+                        <a href="case-studies/luxury-spa.html" class="btn-text">View Case Study <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -396,6 +414,58 @@
                         <div class="portfolio-tags">
                             <span class="portfolio-tag">Real Estate</span>
                             <span class="portfolio-tag">Professional</span>
+                        </div>
+                        <a href="case-studies/real-estate.html" class="btn-text">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Success Stories</h2>
+                <p>See why businesses trust BK1 for their web presence</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Working with BK1 was a game-changer. They didn't just build a website; they built a sales channel that actually converts visitors into customers."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar_placeholder" style="background: #e2e8f0; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-color);">SM</div>
+                        <div class="author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p>Founder, Glow Boutique</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"The attention to detail and SEO expertise is unmatched. We ranked on the first page of Google within weeks of our new site launching."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar_placeholder" style="background: #e2e8f0; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-color);">JM</div>
+                        <div class="author-info">
+                            <h4>James Miller</h4>
+                            <p>Owner, Miller Construction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Responsive, professional, and results-driven. The maintenance package gives me peace of mind knowing my site is always secure."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar_placeholder" style="background: #e2e8f0; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-color);">EL</div>
+                        <div class="author-info">
+                            <h4>Elena Lin</h4>
+                            <p>Director, HealthFirst Spa</p>
                         </div>
                     </div>
                 </div>
@@ -577,11 +647,11 @@
                             <p>+1 438 600 8005</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
+                <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h3>Response Time</h3>
-                            <p>Within 24 hours</p>
+                            <h3>Service Area</h3>
+                            <p>Serving clients in Montreal, Toronto, New York, and worldwide.</p>
                         </div>
                     </div>
                 </div>
@@ -630,15 +700,6 @@
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
